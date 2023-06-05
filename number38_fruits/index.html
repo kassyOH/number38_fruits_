@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 웹페이지 정보 -->
+  <meta name="author" content="반여농산물도매시장 농협38번">
+  <meta name="keywords"
+    content="과일, 과일선물, 선물상자, 명절선물, 고급과일, 농협38번, 반여농산물도매시장, 과일맛집, 과일배달, 과일배송, fruit, fruits, gifts, gift">
+  <meta name="discription" content="최고의 과일만을 선별하여 소중한 고객님께 전달합니다.">
+  <meta name="copyright" content="반여농산물도매시장 농협38번 정수민">
+  <!-- 오픈그래픽 -->
+  <meta property="og:title" content="반여농산물도매시장 농협38번">
+  <meta property="og:url" content="https://kassyOH.github.io/number38_fruits">
+  <meta property="og:image" content="./images/ogimage.jpg">
+  <meta property="og:discription" content="최고의 과일만을 선별하여 소중한 고객님께 전달합니다.">
+  <!-- 트위터 -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="portfolio">
+  <meta name="twitter:url" content="https://kassyOH.github.io/number38_fruits">
+  <meta name="twitter:image" content="./images/ogimage.jpg">
+  <meta name="twitter:discription" content="최고의 과일만을 선별하여 소중한 고객님께 전달합니다.">
+
+  <title>반여농산물도매시장 농협38번</title>
+
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- START HERE -->
+  <link rel="stylesheet" href="./css/form.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initialize&v=weekly"defer></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- index style -->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <style>
+    #map {
+      width: 100%;
+      height: 500px;;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrap" id="wrap">
+    <div class="skip">
+      <a href="#main">메인 바로가기</a>
+      <a href="#address">주소 바로가기</a>
+      <a href="#contact_us">문의하기 바로가기</a>
+      <a href="#footer">푸터 바로가기</a>
+    </div>
+    <header class="header clearfix">
+			<picture>
+				<a href="index.html">
+					<img src="./images/main_logo.png" alt="로고" class="main_logo">
+				</a>
+			</picture>
+    </header>
+    <section class="slider">
+      <div class="swiper-container">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/main_slider01.png" alt="slider01">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_slider02.png" alt="slider02">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_slider03.png" alt="slider03">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_slider04.png" alt="slider04">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main_slider05.png" alt="slider05">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="address" id="address" style="position: relative;">
+			<div class="address-inner">
+      	<h2 class="address-tit">찾아오는 길</h2>
+				<div class="address-flex">
+					<article class="address-left">
+						<div id="map"></div>
+					</article>
+					<article class="address-right">
+						<ul class="address-list">
+							<li>
+								<img src="/images/main_banner.jpg" alt="">
+							</li>
+							<li>
+								<strong>대표자</strong>
+								<span>정수민</span>
+							</li>
+							<li>
+								<strong>전화번호</strong>
+								<span>010-8624-9629</span>
+							</li>
+							<li>
+								<strong>주소</strong>
+								<span>부산광역시 해운대구 수영강변대로 626 반여농산물도매시장 농협청과 38번</span>
+							</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+    </section>
+    <section class="contact" id="contact_us">
+			<div class="contact-inner">
+				<h2 class="contact-tit">문의하기</h2>
+				<form class="gform pure-form pure-form-stacked" method="POST" data-email="sumin.fruits@gmail.com"
+					action="https://script.google.com/macros/s/AKfycbwnb9L7oPAoxEvGAfjYx24nt4C_FIJlyzjAw21Kfw6ZQnoNCAAusRQus8x_wALP1s9Dkg/exec">
+
+					<div class="form-elements">
+						<fieldset class="pure-group">
+							<label for="name">이름</label>
+							<input id="name" name="name" placeholder="성함을 입력해주세요." />
+						</fieldset>
+
+						<fieldset class="pure-group">
+							<label for="message">문의사항</label>
+							<textarea id="message" name="message" rows="10" placeholder="문의사항을 입력해주세요."></textarea>
+						</fieldset>
+
+						<fieldset class="pure-group">
+							<label for="email">이메일 주소</label>
+							<input id="email" name="email" type="email" value="" required placeholder="회신받으실 이메일주소를 입력해주세요." />
+						</fieldset>
+
+						<!-- <fieldset class="pure-group honeypot-field">
+							<label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+								empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+							<input id="honeypot" type="text" name="honeypot" value="">
+						</fieldset> -->
+
+						<div class="form-btbx">
+							<button class="button-success pure-button button-xlarge">
+								<i class="fa fa-paper-plane"></i>&nbsp;전송
+							</button>
+						</div>
+					</div>
+
+
+					<!-- Customise the Thankyou Message People See when they submit the form: -->
+					<div class="thankyou_message" style="display:none;">
+						<h2><em>Thanks</em> for contacting us!
+							We will get back to you soon!</h2>
+					</div>
+				</form>
+			</div>
+    </section>
+    <footer>
+      <address>
+        <p>
+          대표자 명:정 수민<br>
+          주소: 부산광역시 해운대구 수영강변대로 626 반여농산물도매시장 농협청과 38번<br>
+          전화번호: 010-8624-9629<br>
+          이메일: sumin.fruits@gmail.com<br><br><br>
+
+          Copyright by 2023 sumin jeong all rights reserved.
+        </p>
+      </address>
+    </footer>
+  </div>
+
+  <!-- 스크립트 -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/prefixfree.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script data-cfasync="false" src="./js/form-submission-handler.js"></script>
+  <script>
+    txtTyping();
+
+    // function initialize() {
+    //   const fenway = { lat: 35.214390, lng: 129.122700 };
+    //   const map = new google.maps.Map(document.getElementById("map"), {
+    //   center: fenway,
+    //   zoom: 17
+    //   });
+    // }
+
+    var map = L.map('map').setView([35.214390, 129.122700], 14);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([35.214390, 129.122700]).addTo(map)
+      .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+      .openPopup();
+
+// window.initialize = initialize;
+  </script>
+
+</body>
+
+</html>
